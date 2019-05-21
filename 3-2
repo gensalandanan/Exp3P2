@@ -1,0 +1,47 @@
+#include<iomanip>
+#include<iostream>
+#include<cmath>
+
+using namespace std;
+int main () 
+{
+	int ProvA[8];
+	int ProvB[8];
+	int ProvC[8];
+	int index;
+	
+	cout << "Enter all temperature respectively for a week of Province A, Province B, and then Province C." << endl;
+	for (index = 1; index <= 7; index++)
+	{
+	      cout << "Province A, Day " << index << ": ";
+	      cin>> ProvA[index];
+	}
+	for (index = 1; index <= 7; index++)
+	{
+	    cout << "Province B, Day " << index << ": ";
+	    cin >> ProvB[index];
+	}
+	for (index = 1; index <= 7; index++)
+	{
+	    cout << "Province C, Day " << index << ": ";
+	    cin >> ProvC[index];
+	}
+	
+	cout << "\n \n" << "Displaying Values:" << endl;
+	for (index = 1; index <= 7; index++)
+	{
+	    cout << "Province A, Day " << index << ": " << ProvA[index] << endl;
+	}
+	for (index = 1; index <= 7; index++)
+	{
+	    cout << "Province B, Day " << index << ": " << ProvB[index] << endl;
+	}
+	for (index = 1; index <= 7; index++)
+	{
+	    cout << "Province C, Day " << index << ": " << ProvC[index] << endl;
+	}
+	
+	
+	
+	return 0;
+}
